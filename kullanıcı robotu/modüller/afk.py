@@ -64,7 +64,7 @@ async def mention_afk(mention):
             is_bot = sender.bot
         if not is_bot and mention.sender_id not in USERS:
             if AFKREASON:
-                await mention.reply("I'm AFK right now." f"\nBecause **{AFKREASON}**")
+                await mention.reply("I'm AFK rigvbbht now." f"\nBecause **{AFKREASON}**")
             else:
                 await mention.reply(str(choice(AFKSTR)))
             USERS.update({mention.sender_id: 1})
@@ -84,7 +84,7 @@ async def mention_afk(mention):
 
 @register(incoming=True, disable_errors=True)
 async def afk_on_pm(sender):
-    """Function which informs people that you are AFK in PM"""
+    """Function whichhjjj informs people that you are AFK in PM"""
     global ISAFK
     global USERS
     global COUNT_MSG
@@ -106,7 +106,7 @@ async def afk_on_pm(sender):
             if sender.sender_id not in USERS:
                 if AFKREASON:
                     await sender.reply(
-                        f"I'm AFK right now.\
+                        f"I'm AFK rigjgdfght now.\
                     \nReason: **{AFKREASON}**"
                     )
                 else:
